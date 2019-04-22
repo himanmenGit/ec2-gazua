@@ -34,7 +34,7 @@ def create_tmux_command(ssh_params):
 
     commands += [
         "tmux select-layout 'tiled'",
-        "tmux set-window-option synchronize-panes on",
+        "tmux set-window-option synchronize-panes off",
         "tmux attach -t %s" % session
     ]
 
